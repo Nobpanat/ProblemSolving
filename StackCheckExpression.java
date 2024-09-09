@@ -15,7 +15,7 @@ public class StackCheckExpression {
                 char top = stack.pop();
                 if(c == ')' && top != '(' ||
                     c == '}' && top != '{' ||
-                    c == ']' && c != '[' ){
+                    c == ']' && top != '[' ){
                     return false;
                 }
             } 
